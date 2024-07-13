@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "100765230808",
+    "project_id": "city-chat-9d109",
+    "storage_bucket": "city-chat-9d109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100765230808:android:d3e7b12d2e9dd3996619ad",
+        "android_client_info": {
+          "package_name": "com.example.weatherappfragment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrZBWkWBd-_yUJ9Gn2dUjr9czh3RPpS4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

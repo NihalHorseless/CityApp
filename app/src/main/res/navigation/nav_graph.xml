@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/a1Splash">
+
+    <fragment
+        android:id="@+id/a1Splash"
+        android:name="com.example.weatherappfragment.ui.fragments.A1Splash"
+        android:label="fragment_a1_splash"
+        tools:layout="@layout/fragment_a1_splash" >
+        <action
+            android:id="@+id/action_a1Splash_to_a2Main"
+            app:destination="@id/a2Main" />
+    </fragment>
+    <fragment
+        android:id="@+id/a2Main"
+        android:name="com.example.weatherappfragment.ui.fragments.A2Main"
+        android:label="fragment_a2_main"
+        tools:layout="@layout/fragment_a2_main" >
+        <action
+            android:id="@+id/action_a2Main_to_a3FavoriteCities"
+            app:destination="@id/a3FavoriteCities" />
+        <action
+            android:id="@+id/action_a2Main_to_a4Cities"
+            app:destination="@id/a4Cities" />
+    </fragment>
+    <fragment
+        android:id="@+id/a3FavoriteCities"
+        android:name="com.example.weatherappfragment.ui.fragments.A3FavoriteCities"
+        android:label="fragment_a3_favorite_cities"
+        tools:layout="@layout/fragment_a3_favorite_cities" >
+        <action
+            android:id="@+id/action_a3FavoriteCities_to_a5CityDetail"
+            app:destination="@id/a5CityDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/a4Cities"
+        android:name="com.example.weatherappfragment.ui.fragments.A4Cities"
+        android:label="fragment_a4_cities"
+        tools:layout="@layout/fragment_a4_cities" >
+        <action android:id="@+id/action_a4Cities_to_a5CityDetail"
+            app:destination="@+id/a5CityDetail">
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/a5CityDetail"
+        android:name="com.example.weatherappfragment.ui.fragments.A5CityDetail"
+        android:label="fragment_a5_city_detail"
+        tools:layout="@layout/fragment_a5_city_detail" >
+        <action
+            android:id="@+id/action_a5CityDetail_to_a6HistoricalData"
+            app:destination="@id/a6HistoricalData" />
+        <argument
+            android:name="cityName"
+            app:argType="string"
+            android:defaultValue="New York City, USA" />
+        <argument
+            android:name="longitude"
+            app:argType="float"
+            android:defaultValue="-74.0059" />
+        <argument
+            android:name="latitude"
+            app:argType="float"
+            android:defaultValue="40.7128" />
+        <action
+            android:id="@+id/action_a5CityDetail_to_a51UserLogin"
+            app:destination="@id/a51UserLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/a6HistoricalData"
+        android:name="com.example.weatherappfragment.ui.fragments.A6HistoricalData"
+        android:label="fragment_a6_historical_data"
+        tools:layout="@layout/fragment_a6_historical_data" >
+        <argument
+            android:name="cityName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/a51UserLogin"
+        android:name="com.example.weatherappfragment.ui.fragments.A51UserLogin"
+        android:label="fragment_a5_1_user_login"
+        tools:layout="@layout/fragment_a5_1_user_login" >
+        <action
+            android:id="@+id/action_a51UserLogin_to_a52CityChatScreen"
+            app:destination="@id/a52CityChatScreen" />
+        <action
+            android:id="@+id/action_a51UserLogin_to_a53CityComment"
+            app:destination="@id/a53CityComment" />
+        <argument
+            android:name="cityName"
+            app:argType="string" />
+        <argument
+            android:name="cityMenu"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/a52CityChatScreen"
+        android:name="com.example.weatherappfragment.ui.fragments.A52CityChatScreen"
+        android:label="A52CityChatScreen" >
+        <argument
+            android:name="cityName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/a53CityComment"
+        android:name="com.example.weatherappfragment.ui.fragments.A53CityComment"
+        android:label="A53CityComment" >
+        <argument
+            android:name="cityName"
+            app:argType="string" />
+    </fragment>
+</navigation>

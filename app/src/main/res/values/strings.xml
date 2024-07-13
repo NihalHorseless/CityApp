@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Weather APP (Fragment)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="city">Zaragoza</string>
+    <string name="Button_Cities">Cities</string>
+    <string name="Favorite_Cities">Favorites</string>
+    <string name="Temperature">23 °F</string>
+    <string name="ImgContent">TODO</string>
+    <string name="SampleCity">Madrid</string>
+    <string name="CityText">Cities</string>
+    <string name="TimezoneSample">Europe/Madrid</string>
+    <string name="WeatherSampleText">Sunny</string>
+    <string name="SampleCityTemp">21 °C</string>
+    <string name="sunny_days_txt">Most Common Condition :</string>
+    <string name="weather_statistics_txt">Weather Statistics</string>
+    <string name="average_temperature_txt">Average Temperature :</string>
+    <string name="sunny_days">210</string>
+    <string name="EmptyString">--------</string>
+    <string name="Date">24-05-2024</string>
+    <string name="search_city">Search Cities</string>
+    <string name="register">Register</string>
+    <string name="enter_your_nickname">Enter your Email</string>
+    <string name="register_to_chat">Register to Chat</string>
+    <string name="send">Send</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="enter_a_comment">Enter a Comment</string>
+    <string name="CityReviewsText">Madrid Reviews</string>
+    <string name="LoginHaveAccount">Already have an Account?</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="login">Login</string>
+    <string name="madrid_chat">Madrid Chat</string>
+    <string name="username">Username</string>
+    <string name="comment_content">Comment content</string>
+    <string name="DateForComment">2024-05-20 17:47</string>
+</resources>
